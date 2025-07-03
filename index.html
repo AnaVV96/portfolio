@@ -15,13 +15,13 @@
     </div>
     <nav class="header__nav">
         <ul class="header__nav-list">
-            <li class="header__nav-item"><a href="#">About</a></li>
-            <li class="header__nav-item"><a href="#">Portfolio</a></li>
-            <li class="header__nav-item"><a href="#">Contact</a></li>
+            <li class="header__nav-item"><a href="#profile">About</a></li>
+            <li class="header__nav-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="header__nav-item"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
   </header>
-    <main class="profile">
+    <main class="profile" id="profile">
     <div class="profile__wrapper">
       <div class="profile__img-container">
         <img src="perfil-del-usuario.png" class="profile__img">
@@ -62,7 +62,7 @@
     </div>
     </div>
   </main> 
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <h2 class="portfolio_title">PORTFOLIO SECTION</h2>
     <div class="portfolio__project-container">
       <div class="portfolio__project">
@@ -85,5 +85,37 @@
       </div>
     </div>
   </section>
-</body>
+  <section class="form" id="contact">
+    <h2 class="form__title">CONTACT</h2>
+    <form class="form__form">
+      <div class="form__input-container">
+        <label>Nombre
+        <input type="text" placeholder="John">
+        </label>  
+      </div>
+      <div class="form__input-container">
+        <label>Apellido
+        <input type="text" placeholder="Doe">
+        </label>  
+      </div>
+      <div class="form__input-container">
+        <label>Mail
+        <input type="email" placeholder="youremail@example.com">
+        </label>  
+      </div>
+      <div class="form__input-container">
+        <label>Mensaje
+        <textarea type="text" placeholder="Escribe aquí tu mensaje"></textarea>
+        </label>  
+      </div>
+      <div class="form__input-container">
+        <label>
+        <input type="submit">
+        </label>  
+      </div>
+    </form>
+  </section>
+  <footer>
+    <strong> Ana Vicente </strong> - Copyright
+  </footer>
 </html>
