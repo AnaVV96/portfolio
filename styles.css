@@ -28,6 +28,11 @@ div, ul, nav, header, footer, a, li, label, body {
     z-index: 10;
     text-align: center;
     font-size: 20px;
+    position: sticky;
+    top:0;
+    background-color: #fff;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .header__open-nav-button {
@@ -86,6 +91,14 @@ div, ul, nav, header, footer, a, li, label, body {
 /* ---------HEADER QUERIES----------- */
 
 @media (min-width: 600px) {
+    .header {
+        position: sticky;
+        top:0;
+        background-color: #fff;
+        z-index: 100;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
     .header__nav {
         display: flex;
         position: static;
@@ -293,6 +306,8 @@ h1 {
     display: grid;
     place-content: center;
     border-radius: 8px;
+    animation: aparecer both;
+    animation-timeline: view();
 }
 
 .portfolio__project:hover {
@@ -423,4 +438,15 @@ footer {
     color: #fffd;
     font-size: 22px;
 
+}
+
+/* ---------ANIMACIONES----------- */
+
+@keyframes aparecer {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
 }
