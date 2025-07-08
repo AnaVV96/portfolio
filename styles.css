@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    --bg-color: #fff;
     background-color: #e2eaff;
     color: #101632dd;
 }
@@ -17,7 +18,7 @@ div, ul, nav, header, footer, a, li, label, body {
 /* ---------HEADER SECTION----------- */
 
 .header {
-    background-color: #fff;
+    background-color: var(--bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +31,7 @@ div, ul, nav, header, footer, a, li, label, body {
     font-size: 20px;
     position: sticky;
     top:0;
-    background-color: #fff;
+    background-color: var(--bg-color);
     z-index: 100;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -49,7 +50,7 @@ div, ul, nav, header, footer, a, li, label, body {
 
 .header__nav {
     display: none;
-    background-color: #fff;
+    background-color: var(--bg-color);
     position: absolute;
     height: 100vh;
     width: 100vw;
@@ -94,7 +95,7 @@ div, ul, nav, header, footer, a, li, label, body {
     .header {
         position: sticky;
         top:0;
-        background-color: #fff;
+        background-color: var(--bg-color);
         z-index: 100;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
@@ -133,7 +134,7 @@ div, ul, nav, header, footer, a, li, label, body {
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    background-color: #fff;
+    background-color: var(--bg-color);
     max-width: 1400px;
 }
 
@@ -238,7 +239,7 @@ h1 {
     }
 
     .profile__data-container {
-        background-color: #fff;
+        background-color: var(--bg-color);
         display: flex;
         flex-direction: column;
         justify-content: center; 
@@ -265,7 +266,7 @@ h1 {
         height: 100%;
         object-fit: cover;
         width: 620px;
-        background-color: #fff;
+        background-color: var(--bg-color);
     }
 }
 
